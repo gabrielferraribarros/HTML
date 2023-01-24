@@ -40,8 +40,9 @@ html {
 
 .intro {
     font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
     color: beige;
-    margin-left: 10px;
+    margin-left: 75px;
 }
 
 .intro h1 {
@@ -49,19 +50,61 @@ html {
 }
 
 .intro p {
-    margin-right: 50%;
-}
-
-.intro img {
-    width: 500px;
-    height: 281px;
-}
-
-img, p {
     display: inline-block;
+    width: 40%;
+}
+
+.img_intro {
+    width: 700px;
+    height: 400px;
+    margin-left: 5%;
+}
+
+.intro_2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 19px;
+    color: beige;
+    margin-left: 75px;
+}
+
+.intro_img img {
+    display: inline-block;
+    padding: 70px;
+}
+
+.Aaron_mit {
+    width: 400px;
+    height: 200px;
+}
+
+.Aaron_cartum {
+    width: 260px;
+    height: 400px;
+}
+
+.Aaron_ano {
+    width: 400px;
+    height: 200px;
+}
+
+.inicio h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: beige;
+    margin-left: 75px;
 }
 
 body {
     margin: 0px;
     background-color: #454545;
+}
+
+.btn-fixed {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    visibility: hidden;
+}
+
+.btn-fixed.visible {
+    visibility: visible;
 }
