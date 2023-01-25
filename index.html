@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<script src="botao.js"></script>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <title>Internet's Own Boy</title>
-</head>
-<body>
-    <a class="btn-fixed" href="#top">
-        <span class="matrialicons">
-            volar ao topo
-        </span>
-    </a>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <title>Internet's Own Boy</title>
+    </head>
+    <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">voltar ao topo</button>
+    <script type="text/javascript" src="botao.js"></script>
     <div class="header" id="header">
          <h1>Aaron Swartz</h1>
          <h2>Internet's Own boy</h2>
@@ -26,7 +22,6 @@
             <li><a href="#">fim</a></li>
         </ul>
     </div>
-    <div class="back-to-top" href="#"></div>
     <div class="intro" id="intro">
         <h1>Quem foi Aaron Swartz.</h1>
         <p>Nascido em 8 de novembro de 1986 <b>Aaron Hillel Swartz</b>
@@ -58,13 +53,26 @@
         </p>
     </div>
     <div class="intro_img" id="intro_img">
-        <img src="Aaron_mit.jpg" alt="Aaron no mit" class="Aaron_mit" align="top">
-        <img src="aaron_cartum.jpg" alt="Aaron cartum" class="Aaron_cartum" align="top">
-        <img src="Aaron_ANo.jpg" alt="Aaron annonymus" class="Aaron_ano" align="top">
-    </a>
+        <figure>
+            <img src="Aaron_mit.jpg" alt="Aaron no mit" class="Aaron_mit" align="top">
+            <figcaption class="mit-pic">Imagens do sistema de seguranca do MIT que mostram o momento em que Aaron
+                invade os servidores da universidade.
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="aaron_cartum.jpg" alt="Aaron cartum" class="Aaron_cartum" align="top">
+            <figcaption class="cartum-pic">Cartum que coloca o MIT como o responsavel pelo suicidio de Aaron.</figcaption>
+        </figure>
+        <figure>
+            <img src="Aaron_ANo.jpg" alt="Aaron annonymus" class="Aaron_ano" align="top">
+            <figcaption class="ano-pic">Print do dia em que o Annonymous invadiu o site do MIT e colocou na pagina principal
+                uma "homenagem" a Aaron.
+            </figcaption>
+        </figure>
     </div>
     <div class="inicio" id="inicio">
-        <h1>INICIO DE TUDO</h1>
+        <h1>INICIO DE TUDO.</h1>
+        <p></p>
     </div>
 </body>
 </html>
