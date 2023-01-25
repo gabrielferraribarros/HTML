@@ -50,26 +50,44 @@ html {
 }
 
 .intro p {
+    text-align: justify;
     display: inline-block;
     width: 40%;
 }
 
 .img_intro {
     width: 700px;
-    height: 400px;
+    height: 424px;
     margin-left: 5%;
 }
 
 .intro_2 {
+    text-align: justify;
     font-family: 'Courier New', Courier, monospace;
     font-size: 19px;
     color: beige;
+    margin-right: 75px;
     margin-left: 75px;
+    margin-bottom: 45px;
 }
 
-.intro_img img {
+.intro_img figure {
     display: inline-block;
-    padding: 70px;
+    margin-left: 60px;
+    padding: 22px;
+}
+
+
+.intro_img figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
+.mit-pic {
+    max-width: 394px;
 }
 
 .Aaron_mit {
@@ -77,9 +95,17 @@ html {
     height: 200px;
 }
 
+.cartum-pic {
+    max-width: 254px;
+}
+
 .Aaron_cartum {
     width: 260px;
     height: 400px;
+}
+
+.ano-pic {
+    max-width: 394px;
 }
 
 .Aaron_ano {
@@ -90,7 +116,7 @@ html {
 .inicio h1 {
     font-family: 'Courier New', Courier, monospace;
     color: beige;
-    margin-left: 75px;
+    margin-left: 125px;
 }
 
 body {
@@ -98,13 +124,22 @@ body {
     background-color: #454545;
 }
 
-.btn-fixed {
+#myBtn {
+    display: none;
     position: fixed;
-    bottom: 30px;
+    bottom: 20px;
     right: 30px;
-    visibility: hidden;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
 }
 
-.btn-fixed.visible {
-    visibility: visible;
-}
+#myBtn:hover {
+    background-color: #555;
+  }

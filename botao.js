@@ -1,11 +1,16 @@
-const botao = document.querySelector(".btn-fixed");
+let mybutton = document.getElementById("myBtn");
 
-window.addEventListener("scroll", function (event) {
+window.onscroll = function() {scrollFunction()};
 
-    if (window.scrollY == 0){
-        botao.classList.remove("visible");
-    }else{
-        botao.classList.add("visible");
-    }
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
 
-})
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
