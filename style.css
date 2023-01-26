@@ -87,7 +87,14 @@ html {
 }
 
 .mit-pic {
+    transition: 0.7s;
+    opacity: 0%;
     max-width: 394px;
+}
+
+.Aaron-mit-figure:hover .mit-pic {
+    opacity: 100%;
+    transition: 0.7s;
 }
 
 .Aaron_mit {
@@ -96,7 +103,14 @@ html {
 }
 
 .cartum-pic {
+    transition: 0.7s;
+    opacity: 0%;
     max-width: 254px;
+}
+
+.Aaron-cartum-figure:hover .cartum-pic {
+    opacity: 100%;
+    transition: 0.7s;
 }
 
 .Aaron_cartum {
@@ -105,7 +119,14 @@ html {
 }
 
 .ano-pic {
+    transition: 0.7s;
+    opacity: 0%;
     max-width: 394px;
+}
+
+.Aaron-ano-figure:hover .ano-pic {
+    opacity: 100%;
+    transition: 0.7s;
 }
 
 .Aaron_ano {
@@ -119,12 +140,61 @@ html {
     margin-left: 125px;
 }
 
+.inicio p {
+    float: left;
+    text-align: justify;
+    font-size: 19px;
+    font-family: 'Courier New', Courier, monospace;
+    color: beige;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+.inicio .inicio-linha2 {
+    text-align: justify;
+}
+
+.aaron-kid {    
+    margin-top: 7px;
+    width: 180px;
+    height: 210px;
+}
+
+.aaron-teen {
+    height: 180px;
+    width: 370px;
+}
+
+.inicio-img figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
+.inicio-img figure {
+    display: inline-block;
+}
+
+.kid-capt {
+    max-width: 180px;
+}
+
+.empr h2 {
+    letter-spacing: 2px;
+    font-family: 'Courier New', Courier, monospace;
+    color: beige;
+}
+
 body {
     margin: 0px;
     background-color: #454545;
 }
 
 #myBtn {
+    transition: 0.5s;
+    opacity: 20%;
     display: none;
     position: fixed;
     bottom: 20px;
@@ -141,5 +211,7 @@ body {
 }
 
 #myBtn:hover {
+    opacity: 100%;
+    transition: 1s;
     background-color: #555;
   }
